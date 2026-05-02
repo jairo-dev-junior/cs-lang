@@ -6,5 +6,4 @@ pub enum Token {
     Multiply(char),
     Divide(char),
     Number(String),
-    NumberIndexed,
 }
