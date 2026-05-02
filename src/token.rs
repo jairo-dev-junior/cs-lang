@@ -1,9 +1,10 @@
 #[derive(Debug, PartialEq)]
 pub enum Token {
     Identifier(String),
-    Plus(char),
-    Minus(char),
-    Multiply(char),
-    Divide(char),
+    Plus(),
+    Minus(),
+    Multiply(),
+    Divide(),
     Number(String),
+    Equal(),
 }

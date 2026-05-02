@@ -41,16 +41,19 @@ impl Lexer {
                     number.clear();
                 }
                 if ch == '+' {
-                    tokens.push(Token::Plus(ch));
+                    tokens.push(Token::Plus());
                 }
                 if ch == '*' {
-                    tokens.push(Token::Multiply(ch));
+                    tokens.push(Token::Multiply());
                 }
                 if ch == '/' {
-                    tokens.push(Token::Divide(ch));
+                    tokens.push(Token::Divide());
                 }
                 if ch == '-' {
-                    tokens.push(Token::Minus(ch));
+                    tokens.push(Token::Minus());
+                }
+                if ch == '=' {
+                    tokens.push(Token::Equal());
                 }
             } else {
                 token.push(ch);
